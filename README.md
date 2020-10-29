@@ -19,5 +19,3 @@ Los usuarios admin pueden crear ciudades y sedes y deben estar logueados para po
 3) Continuar con peticiones deseadas
 **NOTA** Para servicios con seguridad, será necesario el token en los **Headers**.
 la key es **autorizacion** y value será el token generado en el login.
-
-

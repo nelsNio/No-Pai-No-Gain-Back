@@ -64,9 +64,9 @@ CREATE TABLE IF NOT EXISTS `gimDB`.`user` (
   `name` VARCHAR(45) NULL,
   `lastname` VARCHAR(45) NULL,
   `role` enum('admin','client') ,
-  `sede_idsede` INT NOT NULL,
+  `sede_idsede` INT NULL,
   `password` VARCHAR(100) NOT NULL,
-  PRIMARY KEY (`iduser`, `sede_idsede`))
+  PRIMARY KEY (`iduser`))
 ENGINE = InnoDB;
 
 SHOW WARNINGS;
