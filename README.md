@@ -6,7 +6,8 @@ Los usuarios admin pueden crear ciudades y sedes y deben estar logueados para po
 2) Ubicarse dentro de la raiz del proyecto
 3) Instalar dependencias con ``npm i``
 4) Registrar el esquema en MySql con el script ``gim.sql``
-5) Desplegar el servidor con ``npm start``
+5) Configurar **/config/db.config.js** con los datos de la DB.
+6) Desplegar el servidor con ``npm start``
 
 ## Pruebas Unitarias
 1) Ubicarse dentro de la raiz del proyecto
