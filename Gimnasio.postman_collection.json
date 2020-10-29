@@ -1,0 +1,514 @@
+{
+	"info": {
+		"_postman_id": "3f3af5ea-d0e2-448b-83d4-6cfbd5cd03ad",
+		"name": "Gimnasio",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Cities",
+			"item": [
+				{
+					"name": "City:Create",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "authorization",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c3VhcmlvIjp7ImlkdXNlciI6MiwiZW1haWwiOiJuZWxzOTBAZ21haWwuY29tIiwibmFtZSI6IkFuZHLDqXMiLCJsYXN0bmFtZSI6Ik5pw7FvIiwicm9sZSI6ImFkbWluIiwic2VkZV9pZHNlZGUiOjEsInBhc3N3b3JkIjoiJDJiJDEwJDFHQWpwYzRRUGQ0OUR1NlNMTlpBMXVVRkhnM1FtazFOUU1uSG5yanRERExrQS92SnlhZGxDIn0sImlhdCI6MTYwMzkxMjgxNCwiZXhwIjoxNjAzOTk5MjE0fQ.Sxk4MbZS3qRJRWql6cv09F_OMySEkQ97LUQMbbJ9-84",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "name",
+									"value": "Paipa",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost:5000/api/v1/cities",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"api",
+								"v1",
+								"cities"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "City: Get by id",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "name",
+									"value": "Tunja",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost:5000/api/v1/cities/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"api",
+								"v1",
+								"cities",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "City: GET ALL",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "authorization",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c3VhcmlvIjp7ImlkdXNlciI6MSwiZW1haWwiOiJuZWxzQG1haWwuY29tIiwibmFtZSI6IkFuZHLDqXMiLCJsYXN0bmFtZSI6Ik5pw7FvIiwicm9sZSI6ImNsaWVudCIsInNlZGVfaWRzZWRlIjoxLCJwYXNzd29yZCI6IiQyYiQxMCRzZ1VLalNMaHpKZzZUd2xSNFc3N3RPcUMzWktCdHRmUHdtWDZZamxZaU9TZVgvVEZKTU1yeSJ9LCJpYXQiOjE2MDM5MDUzNDUsImV4cCI6MTYwMzk5MTc0NX0.FkYdAarw3iTdyQ4ozCMptov4_-3cOO46RQ7z7CQOYqE",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "name",
+									"value": "Tunja",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost:5000/api/v1/cities",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"api",
+								"v1",
+								"cities"
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"protocolProfileBehavior": {}
+		},
+		{
+			"name": "Users",
+			"item": [
+				{
+					"name": "User:Create user admin",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "name",
+									"value": "Andrés",
+									"type": "text"
+								},
+								{
+									"key": "lastname",
+									"value": "Niño",
+									"type": "text"
+								},
+								{
+									"key": "email",
+									"value": "nels90@gmail.com",
+									"type": "text"
+								},
+								{
+									"key": "sede",
+									"value": "1",
+									"type": "text"
+								},
+								{
+									"key": "password",
+									"value": "a12323",
+									"type": "text"
+								},
+								{
+									"key": "role",
+									"value": "admin",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost:5000/api/v1/users/",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"api",
+								"v1",
+								"users",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "User:Create user cliente",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "name",
+									"value": "Andrés",
+									"type": "text"
+								},
+								{
+									"key": "lastname",
+									"value": "Niño",
+									"type": "text"
+								},
+								{
+									"key": "email",
+									"value": "nels90@gmail.com",
+									"type": "text"
+								},
+								{
+									"key": "sede",
+									"value": "1",
+									"type": "text"
+								},
+								{
+									"key": "password",
+									"value": "a12323",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost:5000/api/v1/users/",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"api",
+								"v1",
+								"users",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "User: Get by id",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "name",
+									"value": "Tunja",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost:5000/api/v1/users/1/",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"api",
+								"v1",
+								"users",
+								"1",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "User: GET ALL",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "name",
+									"value": "Tunja",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost:5000/api/v1/users",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"api",
+								"v1",
+								"users"
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"protocolProfileBehavior": {}
+		},
+		{
+			"name": "Sedes",
+			"item": [
+				{
+					"name": "Sede: Create",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "authorization",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c3VhcmlvIjp7ImlkdXNlciI6MiwiZW1haWwiOiJuZWxzOTBAZ21haWwuY29tIiwibmFtZSI6IkFuZHLDqXMiLCJsYXN0bmFtZSI6Ik5pw7FvIiwicm9sZSI6ImFkbWluIiwic2VkZV9pZHNlZGUiOjEsInBhc3N3b3JkIjoiJDJiJDEwJDFHQWpwYzRRUGQ0OUR1NlNMTlpBMXVVRkhnM1FtazFOUU1uSG5yanRERExrQS92SnlhZGxDIn0sImlhdCI6MTYwMzkxMjgxNCwiZXhwIjoxNjAzOTk5MjE0fQ.Sxk4MbZS3qRJRWql6cv09F_OMySEkQ97LUQMbbJ9-84",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "name",
+									"value": "Centro Norte",
+									"type": "text"
+								},
+								{
+									"key": "city",
+									"value": "1",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost:5000/api/v1/sedes/",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"api",
+								"v1",
+								"sedes",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Sede: Get by id",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "name",
+									"value": "Tunja",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost:5000/api/v1/sedes/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"api",
+								"v1",
+								"sedes",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Sede: Get users by id sede",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "authorization",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c3VhcmlvIjp7ImlkdXNlciI6MiwiZW1haWwiOiJuZWxzOTBAZ21haWwuY29tIiwibmFtZSI6IkFuZHLDqXMiLCJsYXN0bmFtZSI6Ik5pw7FvIiwicm9sZSI6ImFkbWluIiwic2VkZV9pZHNlZGUiOjEsInBhc3N3b3JkIjoiJDJiJDEwJDFHQWpwYzRRUGQ0OUR1NlNMTlpBMXVVRkhnM1FtazFOUU1uSG5yanRERExrQS92SnlhZGxDIn0sImlhdCI6MTYwMzkxMjgxNCwiZXhwIjoxNjAzOTk5MjE0fQ.Sxk4MbZS3qRJRWql6cv09F_OMySEkQ97LUQMbbJ9-84",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "name",
+									"value": "Tunja",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost:5000/api/v1/sedes/1/users",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"api",
+								"v1",
+								"sedes",
+								"1",
+								"users"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Sede: GET ALL",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "name",
+									"value": "Tunja",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost:5000/api/v1/sedes",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"api",
+								"v1",
+								"sedes"
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"protocolProfileBehavior": {}
+		},
+		{
+			"name": "Login",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "email",
+							"value": "nels90@gmail.com",
+							"type": "text"
+						},
+						{
+							"key": "password",
+							"value": "a12323",
+							"type": "text"
+						}
+					],
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:5000/api/v1/login",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"v1",
+						"login"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"protocolProfileBehavior": {}
+}
